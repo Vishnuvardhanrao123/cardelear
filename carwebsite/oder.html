@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="'en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="'viewport" content="width=device-width,inital-scale=1.0">
+    <title>oder Application</title>
+    <style>
+        .required::after{
+            content:"*";
+            color: rgb(248, 53, 53);
+            font-size:"20px";
+
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <ins>
+            <h2>MERCEDES BENZ BUYING FORM</h2>
+        </ins>
+    </center>
+    <form>
+        <fieldset>
+            <legend>DEPOSIT WAY</legend>
+            <label class="required" >Type of Deposite</label>
+            <input type="checkbox"><span>Ordinary[CASH]</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label class="required" >Type of Deposite</label>
+            <input type="checkbox"><span>Cheqe book</span>
+        </fieldset>
+
+        <br>
+        <br>
+        <fieldset>
+            <legend>CONDITIONS</legend>
+            
+            <input type="checkbox"><span>I agree to the conditions and rules for cash</span>
+            <br>
+            <br>
+            <input type="checkbox"><span>I agree to the conditions and rules for cheqe deposit</span>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend >Costomer detalis</legend>
+            <label class="required" for="name"> Name:</label>
+            <input type="text" id="name" name="name" placeholder="enter Costomer name" required>
+            &emsp;&emsp;&emsp;&emsp;
+            <label class="required" for="mobilenumber">mobilenumber:</label>
+            <input type="number" id="mobilenumber" name="mobilenumber" placeholder="enter mobilenumber" 
+            maxlength="10" required>&emsp;&emsp;&emsp;&emsp;
+            <br>
+            <br>
+            <label class="required" for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="enter address" pattern="[0-9-aA-z-,-]" required>
+            &emsp;&emsp;&emsp;&emsp;
+
+            <label class="required">Select state</label>
+            <select>
+                <option>Telangana</option>
+                <option>kerala</option>
+                <option>andhra pradesh</option>
+                <option>karnataka</option>
+            </select>
+
+        </fieldset>
+        <fieldset>
+            <legend>CAR DETAILS</legend>
+            <label class="required" for="carname"> Car Name:</label>
+            <input type="text" id="carname" name="carname" placeholder="enter car name" required>
+            &emsp;&emsp;&emsp;<label class="required" for="model name">Model Name:</label>
+            <input type="text" id="model name" name="Model Name" placeholder="enter model name"
+                minlength="3" maxlength="10" required>
+            <br>
+            <br>
+            <label for="engineCC">engineCC</label>
+            <input type="text" id="engineCC" name="engineCC" placeholder="enter engineCC" pattern="[0-9-aA-z-,-]" required>
+            &emsp;&emsp;&emsp;
+
+            <label class="required">select engineCC</label>
+            <select>
+                <option>M160</option>
+                <option>M134</option>
+                <option>M132</option>
+                <option>M281</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>MONEY DETAILS</legend>
+            <label class="required" for="Amount Figures">Amount Deposit in Figure:</label>
+            <input type="number" id="Amount Figures" name="Amount Figures" placeholder="enter amount deposit in figures"
+                maxlength="6" required>
+            <br>
+            <br>
+            <label class="required" for="Amount Figures in words">Amount Deposit in words:</label>
+            <input type="text" id="Amount Figures in words" name="Amount Figures in words"
+                placeholder="enter amount in words" max="100" required>
+            <br>
+            <br>
+            <label class="required"  for="Cheque number"> cheque number:</label>
+            <input type="number" id="Cheque numbe"name="Cheque numbe" placeholder="enter Cheque numbe"  max="100000" required>
+            <br>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Requried Date</legend>
+            <label for="date of delivery"> Delivery date:</label>
+            <input type="date" id="date of delivery" name="date of delivery" placeholder="enter delivery date" required>
+            <br>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>VERIFICATION</legend>
+            <input type="checkbox"><span>APPROVED</span>
+            <br>
+            <br>
+            <input type="checkbox"><span>CHECKED</span>
+            <br>
+            <br>
+            <input type="checkbox"><span>SIGN VERIFIED</span>
+            <input type="text" placeholder="sign verified">
+        </fieldset>
+
+         <hr>
+
+        <a href="./application done.html"><input type="submit"></a><a href="./home.html">home</a>
+
+
+
+
+
+
+
+    </form>
+</body>
