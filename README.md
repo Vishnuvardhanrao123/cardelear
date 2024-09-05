@@ -1,2 +1,0 @@
-# cardelear
-about cars
